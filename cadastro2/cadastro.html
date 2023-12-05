@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Comics</title>
+    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="shortcut icon" href="imagens/logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Comics</h1>
+        <form id="comicsForm">
+            <label for="nome">Comics:</label>
+            <input type="text" id="nome" required />
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" required></textarea>
+
+            <button type="button" onclick="cadastrarcomics()">Cadastrar Comics</button>
+        </form>
+
+        <h2>Comics Disponíveis</h2>
+        <ul id="comicsdisponíveis"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

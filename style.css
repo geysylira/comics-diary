@@ -1,0 +1,296 @@
+/* Variáveis de cores */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Pixelify+Sans&display=swap");
+
+:root {
+    --cor-primaria: #000;
+    /* Azul primário */
+    --cor-secundaria: #ff5722;
+    /* Laranja secundário */
+    --cor-fundo: #f8f8f8;
+    /* Cor de fundo */
+    --cor-texto: #333;
+    /* Cor do texto */
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    /* Reduz o tamanho da logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centraliza a logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10 px;
+    text-align: center;
+    /* Centraliza os itens do menu */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Estilos da seção de introdução */
+.intro {
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('imagens/image 1.jpg');
+    color: rgb(255, 255, 255);
+}
+
+.intro h1 {
+    font-size: 8em;
+    font-family: "Pixelify Sans", cursive;
+}
+
+/* .intro img {
+    max-width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    transition: transform 0.3s;
+} */
+
+/* Estilos da seção de depoimentos */
+.testimonials {
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 60px;
+    /* Tamanho menor para as fotos dos depoimentos */
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.testimonial img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos da seção de áreas de atuação */
+/* Estilos da seção de áreas de atuação */
+.areas {
+    background-color: var(--cor-fundo);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.areas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Os itens das áreas podem quebrar para a próxima linha */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+.areas ul li {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Define o tamanho de cada área e adiciona espaço entre elas */
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #f8f8f8);
+    /* Efeito degradê no fundo de cada área */
+    padding: 20px;
+    transition: background-color 0.3s;
+    /* Transição de cor de fundo */
+    display: flex;
+    align-items: center;
+}
+
+.areas ul li:hover {
+    background-color: var(--cor-primaria);
+    /* Altera a cor de fundo ao passar o mouse */
+}
+
+.areas ul li img {
+    width: 80px;
+    /* Tamanho das imagens das áreas */
+    height: 80px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+    /* Adiciona uma transição suave às imagens */
+}
+
+.areas ul li:hover img {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+/* ... (código anterior) ... */
+
+/* Outros estilos */
+a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Estilos para o formulário */
+.form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form select {
+    appearance: none;
+    /* Remove estilos padrão do elemento select */
+    background: transparent;
+    background-image: url("/imagens/seta.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Cor de fundo alterada ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social a {
+    margin-left: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    /* Tamanho dos ícones de mídia social */
+    height: auto;
+}
+
+/* Estilos para os links no rodapé */
+.footer-links ul li a:hover {
+    color: #007bff;
+    /* Cor de destaque ao passar o mouse sobre os links */
+}
